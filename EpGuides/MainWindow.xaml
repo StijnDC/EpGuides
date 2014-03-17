@@ -1,0 +1,23 @@
+﻿<Window x:Class="EpGuides.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Totally not a virus... Trust me..." Height="616" Width="1001" Loaded="Window_Loaded">
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+       
+        <TabControl HorizontalAlignment="Left" Height="586" VerticalAlignment="Top" Width="993" TabStripPlacement="Left" >
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5">
+                    <ListBox x:Name="lstPrograms" HorizontalAlignment="Left" Height="491" Margin="10,49,0,0" VerticalAlignment="Top" Width="356" />
+                    <TextBox x:Name="txtInput" HorizontalAlignment="Left" Height="23" Margin="10,21,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="356" TextChanged="txtInput_TextChanged"/>
+                    </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
